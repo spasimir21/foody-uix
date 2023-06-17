@@ -1,0 +1,154 @@
+$defalutfont: 'Roboto';
+$main_color: #336559;
+$seconary_color: #ef864f;
+$third_color: #f7cf7f;
+$background_color: #f9f9f9;
+
+[history-item] {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.07);
+}
+
+.product {
+  padding: 5px 20px;
+  display: flex;
+  flex-direction: row;
+  min-height: 88px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-info {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.product_title {
+  flex-direction: column;
+  text-overflow: ellipsis;
+}
+
+.product_title .title {
+  color: $main_color;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  text-overflow: ellipsis;
+}
+
+.product_title .price {
+  color: #9f9f9f;
+  font-weight: 600;
+  font-size: 11px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  padding-top: 2px;
+}
+
+.expire_date {
+  color: #eb574c;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.notshown {
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.show {
+  height: 60px;
+  transition: 0.3s;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.used {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-direction: row nowrap;
+  padding: 10px 20px;
+  background-color: #41a858;
+  border-radius: 8px;
+  color: white;
+  width: 40vw;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  margin: 8px;
+}
+
+.delete {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-direction: row nowrap;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  color: #eb574c;
+  width: 40vw;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  margin: 8px;
+  border: 1px solid #eb574c;
+}
+
+[icon-delete-svg] {
+  width: 12px;
+  height: 14px;
+}
+
+[icon-used-svg] {
+  width: 16px;
+  height: 12px;
+}
+
+.image {
+  width: 57px;
+  height: 56px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.expiration-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: right;
+  text-align: right;
+}
+
+.expiration-container p {
+  margin: 0px;
+}

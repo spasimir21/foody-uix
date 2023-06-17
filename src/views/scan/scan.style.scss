@@ -1,0 +1,33 @@
+[scan] {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 100px 28px 60px 28px;
+  background-color: transparent;
+}
+
+.scan-camera-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scan-camera-container h2 {
+  color: #336559;
+}
+
+.scan-box {
+  width: 100%;
+  aspect-ratio: 1;
+  border: 3px dashed #6d6d6d;
+}
+
+.scan-description-container {
+  background-color: #fff;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  border-radius: 8px;
+  padding: 0 20px;
+}

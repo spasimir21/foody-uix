@@ -1,0 +1,44 @@
+[landing] {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+}
+
+.landing-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 21px;
+}
+
+.landing-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.landing-p {
+  max-width: 224px;
+  font-style: normal;
+  font-family: 'Roboto';
+  font-weight: 300;
+  line-height: 14px;
+  text-align: center;
+  color: #f08d5a;
+}
+
+a {
+  display: block;
+  text-align: center;
+  padding: 20px 60px;
+  background: #336559;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 19px;
+  line-height: 17px;
+  color: #f6cf7f;
+}

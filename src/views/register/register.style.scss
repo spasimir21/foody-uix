@@ -1,0 +1,67 @@
+$accent_color: #ef864f;
+$main_color: #336559;
+
+[register] {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.register-logo-group {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.register-logo-group p {
+  color: $accent_color;
+}
+
+.register-form-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.register-form-fields {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.register-form-fields input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid $main_color;
+  outline: none;
+}
+
+.register-form-redirection {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 5px;
+}
+
+.register-form-redirection p {
+  color: $main_color;
+  font-size: 12px;
+}
+
+.register-form-redirection a {
+  color: $accent_color;
+  font-size: 12px;
+}
+
+.register-button {
+  background-color: $main_color;
+  color: $accent_color;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px 50px;
+}

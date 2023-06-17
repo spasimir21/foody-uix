@@ -1,0 +1,17 @@
+<!-- prettier-ignore -->
+<insert>
+  import iconProducts from "../../assets/svg/icons/iconProducts.svg";
+  import iconScan from "../../assets/svg/icons/iconScan.svg";
+  import iconHistory from "../../assets/svg/icons/iconHistory.svg";
+  import { getRouter } from '@uixjs/router';
+</insert>
+
+<link rel="stylesheet" href="./navigation.style.scss" scoped />
+
+<img class="icon-products" attr:src="iconProducts" @click="getRouter($.context).goto({ route: 'products' })" />
+
+<div class="scan-button-container" @click="getRouter($.context).goto({ route: 'scan' })">
+  <img class="icon-scan" attr:src="iconScan" />
+</div>
+
+<img class="icon-history" attr:src="iconHistory" @click="getRouter($.context).goto({ route: 'history' })" />

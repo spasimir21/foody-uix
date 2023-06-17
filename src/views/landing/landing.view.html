@@ -1,0 +1,18 @@
+<!-- prettier-ignore -->
+<insert>
+  import foodyLanding from "../../assets/svg/foodyLanding.svg";
+  import landing from "../../assets/svg/landing.svg";
+  import { getRouter } from '@uixjs/router';
+</insert>
+
+<link rel="stylesheet" href="./landing.style.scss" scoped />
+
+<div class="landing-wrap">
+  <img attr:src="landing" />
+  <div class="landing-text">
+    <img attr:src="foodyLanding" />
+    <p class="landing-p">Decrease the amount of wasted food Help the planet now</p>
+  </div>
+</div>
+
+<a @click!="getRouter($.context).goto({ route: 'register' })">Get started</a>

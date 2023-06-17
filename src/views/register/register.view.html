@@ -1,0 +1,27 @@
+<!-- prettier-ignore -->
+<insert>
+  import foodyLogo from "../../assets/svg/foodyLogo.svg";
+  import { getRouter } from '@uixjs/router';
+</insert>
+
+<link rel="stylesheet" href="./register.style.scss" scoped />
+
+<div class="register-logo-group">
+  <img attr:src="foodyLogo" />
+  <p>Create your account</p>
+</div>
+
+<div class="register-form-container">
+  <div class="register-form-fields">
+    <input type="text" placeholder="Username" :value!="$.formData.username" />
+    <input type="email" placeholder="Email" :value!="$.formData.email" />
+    <input type="password" placeholder="Password" :value!="$.formData.password" />
+  </div>
+
+  <div class="register-form-redirection">
+    <p>Already have an account?</p>
+    <a @click!="getRouter($.context).goto({ route: 'login' })">Sign In</a>
+  </div>
+</div>
+
+<a class="register-button" @click!="$.register()"> ${ $.registerLoader.loading ? '...' : 'Sign Up' } </a>

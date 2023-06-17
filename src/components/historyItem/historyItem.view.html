@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="./historyItem.style.scss" scoped />
+
+<div class="product">
+  <div class="product-info">
+    <div class="image" #backgroundImage="`url('${$.props.product.imageUrl}')`"></div>
+    <div class="product_title">
+      <div class="title">${ $.props.product.name }</div>
+      <div class="price">${ $.props.product.price } лв.</div>
+    </div>
+  </div>
+
+  <div class="expiration-container">
+    <p #color="$.textColor">${ $.props.product.status == 'used' ? 'Used' : 'Thrown' }</p>
+    <p class="expire_date" #color="$.textColor">${ $.daysSince } days ago</p>
+  </div>
+</div>

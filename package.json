@@ -1,0 +1,32 @@
+{
+  "name": "foody-uix",
+  "version": "1.0.0",
+  "description": "",
+  "source": "index.html",
+  "scripts": {
+    "serve": "parcel",
+    "build": "parcel build"
+  },
+  "dependencies": {
+    "@uixjs/core": "^0.0.1",
+    "@uixjs/reactivity": "^0.0.1",
+    "@uixjs/router": "^0.0.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.2",
+    "@uixjs/parcel-transformer-uix-view": "^0.0.2",
+    "parcel": "^2.5.0",
+    "parcel-transformer-uix-stylesheet": "file:lib/parcel-transformer-uix-stylesheet",
+    "parcel-transformer-uix-view": "file:lib/parcel-transformer-uix-view"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spasimir21/foody-uix.git"
+  },
+  "bugs": {
+    "url": "https://github.com/spasimir21/foody-uix/issues"
+  },
+  "homepage": "https://github.com/spasimir21/foody-uix#readme",
+  "author": "Spasimir Pavlov",
+  "license": "MIT"
+}

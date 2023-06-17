@@ -1,0 +1,67 @@
+$accent_color: #ef864f;
+$main_color: #336559;
+
+[login] {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.login-logo-group {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.login-logo-group p {
+  color: $accent_color;
+}
+
+.login-form-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.login-form-fields {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.login-form-fields input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid $main_color;
+  outline: none;
+}
+
+.login-form-redirection {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 5px;
+}
+
+.login-form-redirection p {
+  color: $main_color;
+  font-size: 12px;
+}
+
+.login-form-redirection a {
+  color: $accent_color;
+  font-size: 12px;
+}
+
+.login-button {
+  background-color: $main_color;
+  color: $accent_color;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px 50px;
+}

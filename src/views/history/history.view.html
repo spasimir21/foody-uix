@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="./history.style.scss" scoped />
+
+<div class="history-page-title">History</div>
+
+<div class="history-page-list">
+  <if _="$.historyLoader.loading || !$.historyLoader.hasHadFirstLoad"> Loading... </if>
+  <else-if _="!$.historyLoader.success"> Something went wrong! </else-if>
+  <else>
+    <each _="product : $.historyLoader.history">
+      <history-item prop:product="$.product" />
+    </each>
+    <else> No history records yet! </else>
+  </else>
+</div>

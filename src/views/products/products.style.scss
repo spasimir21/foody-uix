@@ -1,0 +1,26 @@
+$defalutfont: 'Roboto';
+$main_color: #336559;
+$seconary_color: #ef864f;
+$third_color: #f7cf7f;
+$background_color: #f9f9f9;
+
+[products] {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 28px;
+  min-height: 100vh;
+  background-color: $background_color;
+  padding: 28px 28px 90px 28px;
+}
+
+.products-page-title {
+  font-size: 20px;
+  color: $main_color;
+  font-weight: 600;
+}
+
+.products-page-list {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 16px;
+}

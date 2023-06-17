@@ -1,0 +1,32 @@
+<!-- prettier-ignore -->
+<insert>
+  import iconDelete from '../../assets/svg/icons/iconDelete.svg';
+  import iconUse from '../../assets/svg/icons/iconUse.svg';
+</insert>
+
+<link rel="stylesheet" href="./product.style.scss" scoped />
+
+<component @click:stopPropagation="$.props.setIsShown()" />
+
+<div class="product">
+  <div class="product-info">
+    <div class="image" #backgroundImage="`url('${$.props.product.imageUrl}')`"></div>
+    <div class="product_title">
+      <div class="title">${ $.props.product.name }</div>
+      <div class="price">${ $.props.product.price } лв.</div>
+    </div>
+  </div>
+
+  <div class="expire_date">${ $.daysLeft } days left</div>
+</div>
+
+<div attr:class="$.props.isShown ? 'show' : 'notshown'">
+  <div class="used" @click:stopPropagation="$.remove('used')">
+    <img attr:src="iconUse" class="tick" />
+    Use
+  </div>
+  <div class="delete" @click:stopPropagation="$.remove('thrown')">
+    <img attr:src="iconDelete" class="bin" />
+    Throw
+  </div>
+</div>

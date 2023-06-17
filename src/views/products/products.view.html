@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="./products.style.scss" scoped />
+
+<component @click="$.selectedIndex = -1" />
+
+<div class="products-page-title">Products</div>
+
+<div class="products-page-list">
+  <if _="$.productsLoader.loading || !$.productsLoader.hasHadFirstLoad"> Loading... </if>
+  <else-if _="!$.productsLoader.success"> Something went wrong! </else-if>
+  <else>
+    <each _="product : $.productsLoader.products">
+      <product
+        prop:isShown="$.selectedIndex === $.productIndex"
+        prop:setIsShown="() => $.setIsShown($.productIndex)"
+        prop:onRemove="() => $.removeProduct($.productIndex)"
+        prop:product="$.product"
+      />
+    </each>
+    <else> No products yet! </else>
+  </else>
+</div>
