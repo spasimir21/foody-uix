@@ -8,14 +8,14 @@
     "build": "parcel build"
   },
   "dependencies": {
-    "@uixjs/core": "^0.0.4",
-    "@uixjs/reactivity": "^0.0.3",
-    "@uixjs/router": "^0.0.4"
+    "@uixjs/core": "^0.0.5",
+    "@uixjs/reactivity": "^0.0.4",
+    "@uixjs/router": "^0.0.5"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.9.2",
-    "@uixjs/parcel-transformer-uix-stylesheet": "^0.0.5",
-    "@uixjs/parcel-transformer-uix-view": "^0.0.5",
+    "@uixjs/parcel-transformer-uix-stylesheet": "^0.0.7",
+    "@uixjs/parcel-transformer-uix-view": "^0.0.7",
     "parcel": "^2.5.0"
   },
   "repository": {
